@@ -19,11 +19,17 @@ a.logo{
 
 input{
   height: 30px;
-  width: 250px;
+  width: 300px;
 }
 
 Navbar{
   border-radius: 0%
+}
+
+.panel-heading:hover{
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer; cursor: hand;
 }
 
 
