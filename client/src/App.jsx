@@ -111,57 +111,53 @@ render() {
     return (
       <div>
 
-         <Navbar inverse collapseOnSelect >
-    <Navbar.Header>
-      <Navbar.Brand>
-        <a className="logo" href="#">Envoyus</a>
-      </Navbar.Brand>
-      <Navbar.Toggle />
-    </Navbar.Header>
-    <Navbar.Collapse>
-      <Nav>
-        <NavItem eventKey={1} href="#">Link</NavItem>
-        <NavItem eventKey={2} href="#">Link</NavItem>
-        <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-          <MenuItem eventKey={3.1}>Action</MenuItem>
-          <MenuItem eventKey={3.2}>Another action</MenuItem>
-          <MenuItem eventKey={3.3}>Something else here</MenuItem>
-          <MenuItem divider />
-          <MenuItem eventKey={3.3}>Separated link</MenuItem>
-        </NavDropdown>
-      </Nav>
-      <Nav pullRight>
-        <NavItem eventKey={1} href="#">Link Right</NavItem>
-        <NavItem eventKey={2} href="#">Link Right</NavItem>
-      </Nav>
-    </Navbar.Collapse>
-  </Navbar>
+      <Navbar inverse collapseOnSelect >
+        <Navbar.Header>
+          <Navbar.Brand>
+            <a className="logo" href="#" ><span id="logocolor">Envoyus</span></a>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+        </Navbar.Header>
+      <Navbar.Collapse>
+        <Nav>
+            <NavItem eventKey={1} href="#">Link</NavItem>
+            <NavItem eventKey={2} href="#">Link</NavItem>
+            <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+              <MenuItem eventKey={3.1}>Action</MenuItem>
+              <MenuItem eventKey={3.2}>Another action</MenuItem>
+              <MenuItem eventKey={3.3}>Something else here</MenuItem>
+              <MenuItem divider />
+              <MenuItem eventKey={3.3}>Separated link</MenuItem>
+            </NavDropdown>
+          </Nav>
+          <Nav pullRight>
+            <NavItem eventKey={1} href="#">Link Right</NavItem>
+            <NavItem eventKey={2} href="#">Link Right</NavItem>
+        </Nav>
+       </Navbar.Collapse>
+     </Navbar>
 
 
-
- 
-
-
-
-
-
-
-
-
-        <div className='container'>
-          <div className='text-center'>
-            <SearchBar handleSearch={this.handleSearch.bind(this)}/>
-          </div>
-          <div>
-            {this.state.loading}
-          </div>
-          <div>
-            <Map listings={this.state.resultList} currentLocation={this.state.location} />
-          </div>
-          <div>
-            <ResultList listings={this.state.resultList}/>
-          </div>
+     <div className='container'>
+        <div className='text-center'>
+          <SearchBar handleSearch={this.handleSearch.bind(this)}/>
         </div>
+        <div>
+          {this.state.loading}
+        </div>
+        <div>
+          <Map listings={this.state.resultList} currentLocation={this.state.location} />
+        </div>
+        <div>
+          <ResultList listings={this.state.resultList}/>
+        </div>
+      </div>
+
+      <footer className="footer">
+        <span>Posted by: Hege Refsnes</span>
+        <span>Contact information: <a href="mailto:someone@example.com">
+        someone@example.com</a>.</span>
+      </footer>
 
       </div>
     );

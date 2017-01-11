@@ -5,8 +5,27 @@ body {
     opacity: .9;
 }
 
-a.logo{
+input{
+  height: 30px;
+  width: 300px;
+}
+
+Navbar{
+  border-radius: 0%
+}
+
+#logocolor{
   color: #45B3FF;
+}
+
+
+.navbar {
+  border-radius: 0px;
+  height: 70px;
+  padding: 13px 0px;
+} 
+
+a.logo{
   font-family: $font1;
   font-size: 28px;
   padding-bottom: 15px;
@@ -17,14 +36,6 @@ a.logo{
   font-size: 18px;
 }
 
-input{
-  height: 30px;
-  width: 300px;
-}
-
-Navbar{
-  border-radius: 0%
-}
 
 .panel-heading:hover{
   color: blue;
@@ -32,4 +43,15 @@ Navbar{
   cursor: pointer; cursor: hand;
 }
 
+.footer{
+  background: #222;
+  height: 60px;
+  text-align: center;
+  margin-top: 25px;
+  color: #9d9d9d;
+}
+
+span.footer{
+  padding-top: 25px;
+}
 
