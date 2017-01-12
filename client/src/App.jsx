@@ -102,7 +102,7 @@ class App extends React.Component {
       });
       console.log('asking user for input');
     }
-    this.setState({ loading: 'getting your location' });
+    this.setState({ loading: '' });
     navigator.geolocation.getCurrentPosition(success, error);
   }
 
@@ -139,6 +139,7 @@ render() {
 
 
      <div className='container'>
+
         <div className='text-center'>
           <SearchBar handleSearch={this.handleSearch.bind(this)}/>
         </div>
@@ -152,12 +153,12 @@ render() {
           <ResultList listings={this.state.resultList}/>
         </div>
       </div>
-
-      <footer className="footer">
+      
+      <div className="footer">
         <span>Posted by: Hege Refsnes</span>
         <span>Contact information: <a href="mailto:someone@example.com">
         someone@example.com</a>.</span>
-      </footer>
+      </div>
 
       </div>
     );

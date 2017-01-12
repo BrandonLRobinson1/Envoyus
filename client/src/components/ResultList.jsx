@@ -32,7 +32,7 @@ class List extends React.Component {
       
 
       <div className='col-md-6'>
-      <Panel defaultExpanded header={this.props.listing.title} bsStyle="info" onClick={this.goToLink.bind(this)} classList="results">
+      <Panel defaultExpanded header={this.props.listing.title} bsStyle="success" onClick={this.goToLink.bind(this)} classList="results">
     <ListGroup fill>
       <ListGroupItem>Price: {this.props.listing.price}</ListGroupItem>
       <ListGroupItem>Posted Date: {moment(this.props.listing.updateDate).fromNow()}</ListGroupItem>

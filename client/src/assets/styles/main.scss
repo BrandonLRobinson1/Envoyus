@@ -1,11 +1,13 @@
 $margin: margin auto;
 $font1: 'Pacifico', cursive;
+$headerText: 'Open Sans', sans-serif;
 
 body {
     opacity: .9;
 }
 
 input{
+  padding: 10px;
   height: 30px;
   width: 300px;
 }
@@ -22,13 +24,13 @@ Navbar{
 .navbar {
   border-radius: 0px;
   height: 70px;
-  padding: 13px 0px;
+  padding: 11px 0px;
 } 
 
 a.logo{
   font-family: $font1;
-  font-size: 28px;
-  padding-bottom: 15px;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 .logStatus{
@@ -44,14 +46,22 @@ a.logo{
 }
 
 .footer{
+  
+  text-align: center;  
+  padding: 20px 0px;
   background: #222;
-  height: 60px;
-  text-align: center;
-  margin-top: 25px;
   color: #9d9d9d;
 }
 
-span.footer{
-  padding-top: 25px;
+.description{
+  margin: 0 auto;
+  padding-bottom: 10px;
+  font-family: $headerText;
+  font-size: 30px;
+  color: grey;
+  content-align: center;
+  text-align: center;
+  width: 500px;
 }
+
 

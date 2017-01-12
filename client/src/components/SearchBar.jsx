@@ -109,7 +109,15 @@ class SearchBar extends React.Component {
                 Log In
               </a>
             </div>
+
+            <div className="description">
+             Envoyus <br/>
+             Presents to you craigslist..<br/>
+             that doesn't suck
+            </div>
+
           <input
+            placeholder="Search away"
             //className="form-control"            
             // type="text"
             // placeholder="Enter Item "
@@ -136,10 +144,16 @@ class SearchBar extends React.Component {
               </a>
             </div>
 
+            <div className="description">
+             Envoyus <br/>
+             Presents to you craigslist..<br/>
+             that doesn't suck
+            </div>
+
           <input
             //className="form-control"
             type="text"
-            placeholder="Enter Item "
+            placeholder="Search away"
             value={this.state.searchTerm}
             onChange={this.handleChange.bind(this)}
           />
